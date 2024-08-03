@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chore Chart</title>
+</head>
+<body>
+    {% for chore in chore %}
+        {{ chore.choreday_day }}<br>
+        {{ chore.chore_name }}<br>
+        {{ chore.chore_description }}<br>
+        {{ chore.assigned_to }}<br>
+        {{ chore.done }}<br>
+    {% endfor %}
+</body>
+</html>
