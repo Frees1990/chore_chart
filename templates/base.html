@@ -21,10 +21,10 @@
         <!-- top navigation-->
         <nav class="purple accent-2">
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo center">CHORE CHART</a>
+                <a href="{{ url_for('get_chore') }}" class="brand-logo center">CHORE CHART</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="">Home</a></li>
+                    <li><a href="{{ url_for('get_chore') }}">Home</a></li>
                     <li><a href="">Manage Chart</a></li>
                     <li><a href="">Log In / Log Out</a></li>
                     <li><a href="">Register</a></li>
@@ -34,7 +34,7 @@
 
         <!-- mobile collaps bar-->
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="">Home</a></li>
+            <li><a href="{{ url_for('get_chore') }}">Home</a></li>
             <li><a href="">Manage Chart</a></li>
             <li><a href="">Log In / Log Out</a></li>
             <li><a href="">Register</a></li>
