@@ -22,22 +22,23 @@
         <nav class="purple accent-2">
             <div class="nav-wrapper">
                 <a href="{{ url_for('get_chore') }}" class="brand-logo center">CHORE CHART</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars" style="color: #822f83;"></i>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_chore') }}">Home</a></li>
                     <li><a href="">Manage Chart</a></li>
                     <li><a href="">Log In / Log Out</a></li>
-                    <li><a href="">Register</a></li>
+                    <li><a href="{{ url_for('register') }}">Register</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- mobile collaps bar-->
         <ul class="sidenav" id="mobile-demo">
+            <li><h4 class="center-align purple-text text-darken 4">Hello User</h4></li>
             <li><a href="{{ url_for('get_chore') }}">Home</a></li>
             <li><a href="">Manage Chart</a></li>
             <li><a href="">Log In / Log Out</a></li>
-            <li><a href="">Register</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
 
     </header>
